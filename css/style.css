@@ -1,0 +1,44 @@
+.todolist__btn {
+   display: inline-block;
+   cursor: pointer;
+   padding: 10px;
+   min-width: 20px;
+   border: 1px solid grey;
+}
+.tasks__item--checked {
+   text-decoration: line-through;   
+   font-weight: bold;
+   color: yellowgreen;
+}
+.filters {
+   display: flex;
+   margin-top: 20px;
+
+}
+.filters__item {
+   cursor: pointer;
+   padding: 10px 20px;
+   border: 1px solid #29cf3f;
+   margin-right: 10px;
+}
+.clear-completed {
+   display: inline-block;
+   margin-top: 20px;
+   cursor: pointer;
+   padding: 10px 20px;
+   border: 1px solid #4d29cf;
+   margin-right: 10px;
+}
+.left {
+   margin-top: 20px;
+}
+.delete {
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   padding: 5px;
+   border: 1px solid #abcf29;
+   border-radius: 50%;
+   margin-left: 20px;
+   text-align: center;
+}
