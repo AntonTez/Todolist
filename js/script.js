@@ -20,6 +20,7 @@ addBtn.addEventListener('click', function(e) {
 
 ul.addEventListener('click', function(e) {
    const target = e.target;
+   
    if (target.tagName === 'LI') {
       if (target.classList.contains("tasks__item--checked")) {
          changeTaskStatus(target.textContent, false);
@@ -69,7 +70,6 @@ function changeTaskStatus(element, status) {
    arrayOfTasks.forEach(item => {
       if(item.todo === element) {
          item.complete = status;
-         console.log(arrayOfTasks);
       }
    })
 }
@@ -82,7 +82,6 @@ function showCountOfLeftTasks() {
 }
 
 function filterByStatus(status) {
-   console.log(status);
    if (status === 'all') {
       render(arrayOfTasks);
    }
